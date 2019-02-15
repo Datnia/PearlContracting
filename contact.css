@@ -1,0 +1,268 @@
+.contact {
+  overflow: hidden;
+  background: #272727;
+  height: 100vh;
+}
+
+@-moz-document url-prefix() {
+  .contact {
+    margin: 0;
+  }
+}
+
+.contact h1 {
+  font-size: 56px;
+  font-weight: 900;
+  padding: 5vw 0 2vw 0;
+  margin: 0;
+  color: #d6b73e;
+  text-align: center;
+}
+
+.contact p {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.contact .name {
+  margin-top: 20px;
+  margin-left: 20vw;
+  font-size: 18px;
+}
+
+.form {
+  display: inline-block;
+  width: 60%;
+  padding-top: 4vw;
+  margin: 3vw 7vw 3vw 7vw;
+  color: white;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #272727 inset;
+  box-shadow: 0 0 0 30px #272727 inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+input {
+  float: left;
+  width: 90%;
+  padding: 20px 2vw 20px 0;
+  color: white;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #d6b73e;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+
+input:focus {
+  border-bottom: 2px solid #ccc;
+}
+
+#msg {
+  margin-top: 80px;
+}
+
+#sbjt {
+  margin-top: 30px;
+}
+
+.soc {
+  display: flex;
+  width: 100%;
+}
+
+.contact ul {
+  padding-right: 5vw;
+  display: inline-block;
+  padding-top: 7vw;
+  list-style: none;
+  color: white;
+}
+
+.contact li {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  padding: 0.65vw;
+  margin-top: 10px;
+}
+
+.contact .soc p {
+  text-align: justify;
+  margin: 0;
+  display: inline-block;
+}
+
+.contact li i {
+  color: white;
+  padding-right: 15px;
+  width: 36px;
+  height: 36px;
+}
+
+.contact .smedia {
+  display: inline-block;
+  margin: 1vw 0;
+}
+
+form .line {
+  display: inline-block;
+  width: 42.8%;
+  margin-right: 10px;
+}
+
+li.smedia i:hover {
+  color: #d6b73e;
+  transition: 0.7s;
+}
+
+li i:hover {
+  color: #d6b73e;
+  transition: 0.3s;
+}
+
+textarea {
+  overflow: hidden;
+  width: 93%;
+  background: #272727;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid #d6b73e;
+  caret-color: white;
+  color: white;
+}
+
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+
+#main-footer {
+  position: relative;
+  width: 100%;
+  margin-top: 3vw;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  height: 20px;
+  font-size: 14px;
+}
+
+button {
+  margin-right: 1vw;
+  margin-top: 3vw;
+  font-weight: 600;
+  position: relative;
+  background: none;
+  color: #ccc;
+  width: 149px;
+  height: 39px;
+  border: 2px solid #d6b73e;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: 0.7s;
+  overflow: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translate(-130px) skewx(-15deg);
+}
+
+button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover {
+  background: #d6b73e;
+  cursor: pointer;
+  color: #272727;
+}
+
+button:hover:before {
+  transform: translate(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
+}
+
+button:hover:after {
+  transform: translate(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.sendbtn p {
+  padding: 3vw 4vw;
+  position: relative;
+  float: right;
+  font-size: 18px;
+}
+
+@media (max-width: 1205px) {
+  .soc {
+    display: block;
+  }
+  .contact ul {
+    margin: 0 0 2vw 17vw;
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .contact li {
+    padding: 1vw;
+  }
+
+  .form {
+    position: relative;
+    display: block;
+    width: 70%;
+    padding: 10vw 10vw 0 10vw;
+  }
+
+  .form .line {
+    width: 42.8%;
+  }
+
+  button {
+    position: relative;
+    margin-top: 5vw;
+  }
+}
+
+@media (max-width: 1715px) {
+  .contact ul {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
