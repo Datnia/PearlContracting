@@ -1,22 +1,13 @@
 .contact {
   overflow: hidden;
   background: #272727;
-  height: 100vh;
+  padding: 6vw 0 0;
 }
 
 @-moz-document url-prefix() {
   .contact {
     margin: 0;
   }
-}
-
-.contact h1 {
-  font-size: 56px;
-  font-weight: 900;
-  padding: 5vw 0 2vw 0;
-  margin: 0;
-  color: #d6b73e;
-  text-align: center;
 }
 
 .contact p {
@@ -75,6 +66,7 @@ input:focus {
 .soc {
   display: flex;
   width: 100%;
+  padding-bottom: 4vw;
 }
 
 .contact ul {
@@ -145,14 +137,11 @@ textarea:focus {
 }
 
 #main-footer {
-  position: relative;
   width: 100%;
-  margin-top: 3vw;
-  padding: 2rem;
   text-align: center;
   color: #fff;
-  height: 20px;
   font-size: 14px;
+  padding-bottom: 1vw;
 }
 
 button {
@@ -225,7 +214,8 @@ button:hover:after {
   padding: 3vw 4vw;
   position: relative;
   float: right;
-  font-size: 18px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 1205px) {

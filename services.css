@@ -1,21 +1,18 @@
 .services {
-  padding: 0 10vw 3vw;
+  padding: 0 10vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 30px 0;
 }
-.wwd {
-  text-align: center;
-  font-size: 56px;
-  font-weight: 900;
-  padding-top: 6vw;
-  color: white;
+
+.services h1 {
+  color: #fff;
 }
+
 .services h2 {
   margin: 2.2vw 0 0.5vw 0;
   color: #313131;
-  font-size: 24px;
   text-align: center;
 }
 
@@ -36,6 +33,7 @@
   margin: 0 auto;
   width: 100%;
   background: #fedc56;
+  padding: 5vw 0;
 }
 
 .services i {
@@ -49,7 +47,7 @@
 
 @media screen and (max-width: 850px) {
   .container {
-    padding: 4vw 0;
+    padding: 15vw 0;
     overflow-x: hidden;
     text-align: center;
   }
@@ -63,16 +61,8 @@
     padding-top: 5vw;
   }
 
-  .wwd {
-    font-size: 42px;
-  }
-
   .services h2 {
     font-size: 24px;
     margin: 10px 0;
-  }
-
-  .services p {
-    font-size: 18px;
   }
 }

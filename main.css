@@ -26,8 +26,21 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 56px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  color: #d6b73e;
+}
+
+h2 {
+  font-size: 24px;
+}
+
 p {
   line-height: 1.6;
+  font-size: 16px;
 }
 
 .parallax {
@@ -101,10 +114,6 @@ header .parallax {
   float: right;
   margin: 10px 8vw;
   z-index: 1;
-}
-
-div {
-  font-size: 21px;
 }
 
 nav {
@@ -296,7 +305,10 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+  h1 {
+    font-size: 42px;
+  }
   .btn img {
     width: 15%;
     margin-bottom: 10vw;
@@ -343,5 +355,9 @@ body::-webkit-scrollbar-thumb {
   .vision {
     z-index: 2;
     font-size: 42px;
+  }
+
+  #main-footer {
+    font-size: 12px !important;
   }
 }

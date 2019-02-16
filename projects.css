@@ -1,160 +1,97 @@
 .projects {
-  padding: 2vw 0 10vw 0;
-  text-align: center;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  margin: 10vw 0;
 }
 
 .project {
-  width: 100%;
-  text-align: center;
   display: flex;
-  flex-direction: row;
-  position: relative;
-  padding: 3vw 0;
+  align-items: center;
+  margin: 5vw 0;
+}
+
+.text {
+  order: -1;
+  align-items: center;
+  margin-left: 10vw;
+  text-align: right;
+}
+
+.project img {
+  order: 1;
+  margin: 0 5vw;
+  width: 50%;
+}
+
+.pj2 img {
+  order: -2;
+}
+
+.pj2 .text {
+  margin: initial;
+  margin-right: 10vw;
+  text-align: left;
 }
 
 .rectangle1 {
-  margin-top: 25vh;
   z-index: -1;
   width: 21vw;
-  height: 65vh;
+  height: 70vh;
   background: #80808013;
   position: absolute;
   right: 0;
 }
 
 .rectangle2 {
-  margin-top: 80vh;
-  vertical-align: baseline;
   z-index: -1;
   width: 21vw;
-  height: 55vh;
+  height: 70vh;
   background: #80808013;
   position: absolute;
   left: 0;
+  order: -5;
 }
 
 .rectangle3 {
-  margin-top: 140vh;
   z-index: -1;
   width: 21vw;
-  height: 54vh;
+  height: 70vh;
   background: #80808013;
   position: absolute;
   right: 0;
 }
 
-.project img {
-  transition: all 0.5s;
-  width: 40%;
-  height: 40%;
-}
-
-@-moz-document url-prefix() {
-  .project img {
-    height: 100%;
+@media only screen and (max-width: 850px) {
+  .projects {
+    display: block;
+    overflow-x: hidden;
+    padding-top: 10vw;
   }
-}
 
-.project p {
-  position: relative;
-  display: block;
-  line-height: 1.6;
-  text-align: right;
-  margin: 12vw 5vw 7vw 0;
-  order: -1;
-}
-
-.pj2 p {
-  text-align: left;
-  order: 0;
-  padding-left: 5vw;
-  width: 34%;
-}
-
-.pj1 img {
-  padding-right: 5vw;
-}
-
-.pj3 img {
-  position: relative;
-  margin-right: 5vw;
-}
-.pj2 img {
-  padding-left: 5vw;
-}
-
-.projects h1 {
-  padding-bottom: 2vw;
-  padding-top: 5vw;
-  font-size: 56px;
-  font-weight: 900;
-  color: #d6b73e;
-}
-
-.project h2 {
-  white-space: nowrap;
-  height: 35px;
-  border-bottom: solid 5px #fedc56;
-  text-align: right;
-  font-size: 28px;
-  left: 34%;
-  position: relative;
-  order: -1;
-  margin-top: 16vh;
-}
-
-.pj3 p {
-  margin-left: 5vw;
-}
-
-.project .ht {
-  left: 38%;
-}
-
-.project .eh {
-  position: absolute;
-  left: 50%;
-}
-
-@media screen and (max-width: 1048px) {
   .project {
-    flex-wrap: wrap;
-    max-width: 100%;
+    display: block;
+    margin: 25vw 0;
   }
 
-  .project h2 {
-    text-align: center;
-    margin-top: 6vh;
-    position: relative;
-    left: 10%;
+  .pj1 {
+    margin-top: 10vw;
   }
 
-  .project .eh {
-    position: relative;
-    left: 23%;
+  .text {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center !important;
   }
 
-  .project .ht {
-    left: 20%;
-  }
-
-  .project p {
-    margin-top: 2vh;
-    width: 100%;
-    text-align: center;
-    max-width: 100%;
+  .pj2 .text {
+    margin: 0 auto;
   }
 
   .project img {
-    padding-top: 5vw;
-    width: 100%;
-    order: -1;
-  }
-
-  .pj4 {
-    margin-top: 0;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
   }
 }
