@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.6;
+}
+
 .parallax {
   position: relative;
   height: 100vh;
@@ -58,13 +62,22 @@ a {
 
 .btn {
   background-color: transparent;
-  margin-bottom: 5vh;
-  background: url(/img/arrowds_yellow.png) no-repeat;
-  background-size: 100%;
   position: absolute;
-  padding: 50px;
-  left: 48%;
   animation: bounce 1.3s linear infinite;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-bottom: 7vw;
+}
+
+.btn img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 6%;
 }
 
 .btn:hover {
@@ -182,6 +195,7 @@ button:focus {
   font-family: "Raleway", sans-serif;
   opacity: 1;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.158);
+  z-index: 1;
 }
 
 button {
@@ -189,10 +203,10 @@ button {
   border: none;
   text-align: center;
 
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
   animation: fadein 2s;
 }
 
@@ -273,10 +287,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 7vw;
   }
 
-  .btn {
-    background-size: 75%;
-    left: 42%;
-  }
   nav ul li a {
     font-size: 14px;
   }
@@ -285,7 +295,12 @@ body::-webkit-scrollbar-thumb {
     margin-left: 20px;
   }
 }
+
 @media (max-width: 768px) {
+  .btn img {
+    width: 15%;
+    margin-bottom: 10vw;
+  }
   nav {
     z-index: 3;
   }

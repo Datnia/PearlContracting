@@ -1,5 +1,5 @@
 .services {
-  padding-bottom: 3vw;
+  padding: 0 10vw 3vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -23,16 +23,7 @@
   z-index: 1;
   text-align: center;
   flex: 1;
-  margin: 20px;
   padding: 20px;
-}
-
-.column:first-child {
-  margin-left: 15vw;
-}
-
-.column:last-child {
-  margin-right: 15vw;
 }
 
 .column i {
@@ -56,18 +47,32 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 850px) {
   .container {
     padding: 4vw 0;
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  .services {
+    display: block;
   }
 
   .services .column {
-    flex-basis: 100%;
-    margin: 0 0 5px 0;
+    margin: 0 auto;
     padding-top: 5vw;
   }
 
   .wwd {
-    font-size: 56px;
+    font-size: 42px;
+  }
+
+  .services h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .services p {
+    font-size: 18px;
   }
 }

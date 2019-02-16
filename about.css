@@ -1,11 +1,9 @@
 .about {
-  z-index: -1;
-  margin-top: 56.8vh;
-  height: 100%;
   position: relative;
   width: 100%;
-  font-size: 20px;
   text-align: center;
+  z-index: 1;
+  background-color: #ffffff;
 }
 
 p {
@@ -15,22 +13,14 @@ p {
 .about p {
   justify-content: center;
   color: #d6b73e;
-  margin: 0 10vw 0 10vw;
   line-height: 1.6;
-  padding: 12vw 7vw 6vw 7vw;
   font-size: 32px;
   font-weight: 600;
+  padding: 10vw 16vw;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about p {
-    padding-top: 29vw;
     font-size: 18px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .about p {
-    padding-top: 20vw;
   }
 }
