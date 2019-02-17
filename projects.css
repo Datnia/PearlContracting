@@ -2,7 +2,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin: 10vw 0;
+  padding: 10vw 0;
 }
 
 .project {
@@ -66,7 +66,7 @@
   .projects {
     display: block;
     overflow-x: hidden;
-    padding-top: 10vw;
+    padding-top: 15vw;
   }
 
   .project {

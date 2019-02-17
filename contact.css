@@ -1,7 +1,7 @@
 .contact {
   overflow: hidden;
   background: #272727;
-  padding: 6vw 0 0;
+  padding-top: 6vw;
 }
 
 @-moz-document url-prefix() {
@@ -18,7 +18,7 @@
 .contact .name {
   margin-top: 20px;
   margin-left: 20vw;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .form {
@@ -79,7 +79,7 @@ input:focus {
 
 .contact li {
   font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   padding: 0.65vw;
   margin-top: 10px;
 }
@@ -95,6 +95,7 @@ input:focus {
   padding-right: 15px;
   width: 36px;
   height: 36px;
+  font-size: 36px;
 }
 
 .contact .smedia {
@@ -210,7 +211,7 @@ button:hover:after {
   transition: 0.7s;
 }
 
-.sendbtn p {
+.contact .soc p {
   padding: 3vw 4vw;
   position: relative;
   float: right;
@@ -223,10 +224,8 @@ button:hover:after {
     display: block;
   }
   .contact ul {
-    margin: 0 0 2vw 17vw;
+    margin: 0 auto;
     display: block;
-    width: 100%;
-    text-align: justify;
   }
 
   .contact li {
@@ -237,11 +236,7 @@ button:hover:after {
     position: relative;
     display: block;
     width: 70%;
-    padding: 10vw 10vw 0 10vw;
-  }
-
-  .form .line {
-    width: 42.8%;
+    margin: 0 auto;
   }
 
   button {
@@ -250,9 +245,71 @@ button:hover:after {
   }
 }
 
-@media (max-width: 1715px) {
+@media only screen and (max-width: 850px) {
+  .contact {
+    padding-top: 15vw;
+  }
+  .contact .name {
+    margin: 0 auto;
+    display: block;
+    font-size: 14px;
+  }
+
+  .contact p {
+    width: 75%;
+    margin: 20px auto 3px;
+    display: block;
+  }
+
+  .form {
+    display: block;
+    margin: 0 auto;
+    padding: 15vw 0;
+  }
+
+  .form .line {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  button {
+    width: 25vw;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  .contact .soc p {
+    margin-top: 20px;
+    text-align: left;
+    width: auto;
+    float: initial;
+    padding: 0;
+  }
+
+  textarea {
+    width: 92%;
+  }
+
   .contact ul {
-    padding-right: 0;
-    padding-left: 0;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 15vw 0;
+  }
+
+  .contact li {
+    font-size: 16px;
+    margin: 5vw 0;
+  }
+
+  .contact li i {
+    font-size: 22px;
+  }
+
+  .fa-instagram {
+    font-size: 26px !important;
+  }
+  .fa-facebook-square {
+    font-size: 24px !important;
   }
 }
